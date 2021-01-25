@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tugas 3</title>
+
+
+<script>
+function kali(){
+bil1 = eval(document.aritmatika.bil1.value);
+bil2 = eval(document.aritmatika.bil2.value);
+
+kali = bil1 * bil2
+
+alert("hasil Perkalian "+bil1+" dengan " +bil2+ " adalah "+kali)
+}
+
+function tambah(){
+bil1 = eval(document.aritmatika.bil1.value);
+bil2 = eval(document.aritmatika.bil2.value);
+
+tambah = bil1 + bil2
+
+alert("hasil penjumlahan "+bil1+" dengan " +bil2+ " adalah "+tambah)
+}
+
+function kurang(){
+bil1 = eval(document.aritmatika.bil1.value);
+bil2 = eval(document.aritmatika.bil2.value);
+
+kurang = bil1 - bil2;
+
+alert("Hasil Pengurangan "+bil1+" dengan "+bil2+" adalah "+kurang)
+}
+
+function bagi(){
+bil1 = document.aritmatika.bil1.value;
+bil2 = document.aritmatika.bil2.value;
+
+bagi = bil1 / bil2
+
+alert("hasil pembagian "+bil1+" dengan " +bil2+ " adalah "+bagi)
+}
+
+function reset(){
+
+}
+</script>
+
+<style>
+    body{
+        background-color: aqua;
+        text-align: start;
+    }
+</style>
+</head>
+<body>
+<div class="header"><h1>KALKULATOR</h1></div>
+<form name="aritmatika">
+<label for="bil1">Input Bilangan 1 :</label>
+<input type="number" id="bil1"></br>
+<label for="bil2">Input Bilangan 2 :</label>
+<input type="number" id="bil2"></br>
+
+<input style="background-color: aqua;" type="button" value="+" onclick="tambah()">
+<input style="background-color: rgba(216, 213, 14, 0.801)" type="button" value="-" onclick="kurang()">
+<input style="background-color:rgb(228, 26, 93)" type="button" value="*" onclick="kali()">
+<input style="background-color: rgb(228, 176, 43)" type="button" value="/" onclick="bagi()">
+<input style="background-color: burlywood;" type="reset" value="Reset" onclick="reset()">
+</form>
+</body>
+</html>

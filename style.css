@@ -1,0 +1,17 @@
+ 
+            @import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@1,300&display=swap');
+
+*{
+    font-family: Piazzolla
+}
+
+
+body{
+     background-image: url(bg.png);
+    }
+
+.jumbotron{
+        width: 100%;
+        background-image: url(nama-file.jpg);
+        background-size: cover;
+      }
